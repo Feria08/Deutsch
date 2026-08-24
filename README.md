@@ -1,10 +1,13 @@
 # Deutsch
 
-Unterrichtsbezogenes zum Fach Deutsch.
+Unterrichtsbezogenes zum Fach Deutsch. Übersichtsseite: **https://feria08.github.io/Deutsch/**
 
-## Großstadtlyrik-Kompass
+## Unterrichtsreihen
 
-Interaktiver Kurs-Guide für die Deutsch-10-Reihe „Expressionistische Großstadtlyrik": Reihenplan, Epochenwissen, Kunst, Analyse-Handwerkszeug, Übungen und eine Kreativwerkstatt.
+### Expressionistische Großstadtlyrik (Deutsch 10)
 
-Sobald GitHub Pages aktiv ist, ist die Seite hier erreichbar:
-**https://feria08.github.io/Deutsch/**
+Interaktiver Kurs-Guide: Reihenplan, Epochenwissen, Kunst, Analyse-Handwerkszeug, Übungen und eine Kreativwerkstatt.
+
+**https://feria08.github.io/Deutsch/expressionistische-grossstadtlyrik/**
+
+Weitere Reihen werden hier ergänzt, sobald sie fertig sind — jede bekommt einen eigenen Unterordner, der in der Übersichtsseite (`index.html`) verlinkt wird.
