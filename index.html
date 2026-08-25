@@ -1,54 +1,104 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deutsch – Unterrichtsmaterialien</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,500;0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap">
-<style>
-  :root{
-    --paper:#efe7d6; --ink:#1c1712; --ink-soft:#4a4038;
-    --blood:#a91d22; --ochre:#c98f27; --card:#f5efe1; --line:rgba(28,23,18,0.22);
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --paper:#171310; --ink:#efe6d6; --ink-soft:#c9bda8; --blood:#e2555a; --ochre:#e8b657; --card:#221c16; --line:rgba(239,230,214,0.22); }
-  }
-  *{box-sizing:border-box;}
-  body{ margin:0; background:var(--paper); color:var(--ink); font-family:"Archivo",ui-sans-serif,system-ui,sans-serif; line-height:1.55; }
-  .wrap{ max-width:900px; margin:0 auto; padding:0 clamp(16px,4vw,40px); }
-  header{ background:var(--ink); color:var(--paper); border-bottom:6px solid var(--blood); }
-  header .wrap{ padding:clamp(28px,6vw,54px) clamp(16px,4vw,40px); }
-  h1{ font-family:"Anton",sans-serif; font-weight:400; font-size:clamp(2.2rem,6vw,3.4rem); margin:0 0 0.3em; }
-  header p{ font-family:"Lora",serif; max-width:60ch; color:#e6dcc6; margin:0; }
-  main{ padding:40px 0 60px; }
-  h2{ font-family:"Anton",sans-serif; font-weight:400; font-size:1.3rem; border-bottom:3px solid var(--ink); padding-bottom:8px; margin:0 0 18px; }
-  .unit{ display:block; text-decoration:none; color:var(--ink); background:var(--card); border:2px solid var(--ink); padding:20px 22px; margin-bottom:16px; clip-path:polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%); }
-  .unit:hover{ background:var(--paper); }
-  .unit .kicker{ font-family:"Archivo",sans-serif; font-weight:700; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--blood); }
-  .unit h3{ font-family:"Anton",sans-serif; font-weight:400; font-size:1.3rem; margin:0.2em 0 0.3em; }
-  .unit p{ font-family:"Lora",serif; color:var(--ink-soft); margin:0; }
-  .soon{ font-family:"Lora",serif; font-style:italic; color:var(--ink-soft); border:2px dashed var(--ink); padding:16px 20px; }
-  footer{ border-top:6px solid var(--blood); background:var(--ink); color:#e6dcc6; padding:20px 0; font-family:"Archivo",sans-serif; font-size:0.82rem; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interaktive Unterrichtsmaterialien für den Deutschunterricht.">
+  <meta name="color-scheme" content="light">
+  <title>Deutsch - Unterrichtsmaterialien</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:ital,wght@0,500;0,600;0,700;1,500&amp;family=Lora:ital,wght@0,400;0,500;1,400&amp;display=swap">
+  <style>
+    :root{
+      --page:#efe7d6; --surface:#f7f1e5; --text:#1c1712; --muted:#584d43;
+      --hero:#1c1712; --hero-text:#fff8e9; --hero-muted:#e6dcc6;
+      --accent:#a91d22; --accent-strong:#841419; --gold:#c98f27;
+      --line:rgba(28,23,18,.25); --focus:#1769aa;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      min-height:100svh; margin:0; display:flex; flex-direction:column; overflow-x:hidden;
+      background:var(--page); color:var(--text);
+      font-family:"Archivo",ui-sans-serif,system-ui,sans-serif; line-height:1.55;
+    }
+    .wrap{width:min(100%,980px);margin-inline:auto;padding-inline:clamp(18px,4vw,42px)}
+    header{background:var(--hero);color:var(--hero-text);border-bottom:6px solid var(--accent)}
+    header .wrap{padding-block:clamp(34px,7vw,68px)}
+    h1,h2,h3{font-family:"Anton",Impact,sans-serif;font-weight:400;letter-spacing:.01em}
+    h1{font-size:clamp(2.8rem,8vw,5rem);line-height:.95;margin:0 0 22px}
+    .intro{
+      max-width:65ch; margin:0; padding:14px 18px;
+      border-left:4px solid var(--gold); background:rgba(255,248,233,.09);
+      color:var(--hero-muted); font-family:"Lora",Georgia,serif;
+      font-size:clamp(1rem,2vw,1.12rem);
+    }
+    main{flex:1;padding-block:clamp(38px,7vw,72px)}
+    h2{
+      font-size:clamp(1.45rem,3vw,1.8rem); line-height:1.15;
+      margin:0 0 24px; padding-bottom:12px; border-bottom:3px solid var(--text);
+    }
+    .unit{
+      position:relative; display:grid; grid-template-columns:1fr auto; gap:10px 24px;
+      margin:0; padding:clamp(22px,4vw,32px); border:2px solid var(--text);
+      background:var(--surface); color:var(--text); text-decoration:none;
+      transition:transform .18s ease,background-color .18s ease,box-shadow .18s ease;
+    }
+    .unit:hover{transform:translateY(-3px);background:var(--page);box-shadow:8px 8px 0 var(--accent)}
+    .unit:focus-visible{outline:3px solid var(--focus);outline-offset:5px}
+    .unit .kicker{
+      grid-column:1; font-weight:700; font-size:.74rem; text-transform:uppercase;
+      letter-spacing:.11em; color:var(--accent-strong);
+    }
+    .unit h3{grid-column:1;font-size:clamp(1.5rem,4vw,2rem);line-height:1.15;margin:0}
+    .unit p{grid-column:1;max-width:66ch;margin:0;color:var(--muted);font-family:"Lora",Georgia,serif}
+    .unit svg{
+      grid-column:2; grid-row:1 / 4; align-self:center;
+      width:30px; height:30px; color:var(--accent);
+    }
+    .soon{
+      margin:28px 0 0; padding-top:20px; border-top:1px solid var(--line);
+      color:var(--muted); font-family:"Lora",Georgia,serif; font-style:italic;
+    }
+    footer{
+      padding-block:24px; border-top:6px solid var(--accent);
+      background:var(--hero); color:var(--hero-muted); font-size:.82rem;
+    }
+    @media (max-width:560px){
+      .unit{grid-template-columns:1fr;padding:22px 20px}
+      .unit svg{grid-column:1;grid-row:auto;width:24px;height:24px;margin-top:4px}
+    }
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .unit{transition:none}
+    }
+  </style>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <h1>Deutsch</h1>
-    <p>Unterrichtsmaterialien und interaktive Begleitseiten zu den Deutsch-Reihen. Hier sammeln sich nach und nach alle Unterrichtseinheiten.</p>
-  </div>
-</header>
-<main class="wrap">
-  <h2>Unterrichtsreihen</h2>
+  <header>
+    <div class="wrap">
+      <h1>Deutsch</h1>
+      <p class="intro">Unterrichtsmaterialien und interaktive Begleitseiten für den Deutschunterricht. Hier findest du alle verfügbaren Unterrichtsreihen an einem Ort.</p>
+    </div>
+  </header>
 
-  <a class="unit" href="expressionistische-grossstadtlyrik/">
-    <span class="kicker">Deutsch 10 · Lyrik</span>
-    <h3>Expressionistische Großstadtlyrik</h3>
-    <p>Interaktiver Kurs-Guide: Reihenplan, Epochenwissen, Kunst, Analyse-Handwerkszeug, Übungen und eine Kreativwerkstatt — bis zur Klassenarbeit am 13.10.</p>
-  </a>
+  <main class="wrap">
+    <h2>Unterrichtsreihen</h2>
+    <a class="unit" href="expressionistische-grossstadtlyrik/">
+      <span class="kicker">Deutsch 10 · Lyrik</span>
+      <h3>Expressionistische Großstadtlyrik</h3>
+      <p>Interaktiver Kurs-Guide mit Reihenplan, Epochenwissen, Kunst, Analyse-Werkzeugen, Übungen und einer Kreativwerkstatt zur Vorbereitung auf die Klassenarbeit.</p>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+      </svg>
+    </a>
+    <p class="soon">Weitere Unterrichtsreihen sind in Vorbereitung.</p>
+  </main>
 
-  <div class="soon">Weitere Reihen folgen hier.</div>
-</main>
-<footer><div class="wrap">Deutsch · Unterrichtsbezogenes zum Fach Deutsch</div></footer>
+  <footer>
+    <div class="wrap">Deutsch · Unterrichtsmaterialien für den Deutschunterricht</div>
+  </footer>
 </body>
 </html>
