@@ -2,7 +2,7 @@
 
 Statische, interaktive Begleitseiten für den Deutschunterricht. Die veröffentlichte Übersichtsseite liegt unter:
 
-https://feria08.github.io/Deutsch/
+https://weltraumcowboy67.github.io/Deutsch-besser/
 
 ## Enthaltene Unterrichtsreihe
 
@@ -10,7 +10,7 @@ https://feria08.github.io/Deutsch/
 
 Kurs-Guide mit Reihenplan, Epochenwissen, Kunst, Analyse-Handwerkszeug, Übungen, Quiz, Kratzkarten, Schreibwerkstatt und Klassenarbeits-Checkliste:
 
-https://feria08.github.io/Deutsch/expressionistische-grossstadtlyrik/
+https://weltraumcowboy67.github.io/Deutsch-besser/expressionistische-grossstadtlyrik/
 
 ## Technik
 
