@@ -1,13 +1,14 @@
 # Deutsch
 
-Unterrichtsbezogenes zum Fach Deutsch. Übersichtsseite: **https://feria08.github.io/Deutsch/**
+Statische, interaktive Begleitseiten für den Deutschunterricht. Die veröffentlichte Übersichtsseite liegt unter:
 
-## Unterrichtsreihen
+https://weltraumcowboy67.github.io/Deutsch-besser/
 
-### Expressionistische Großstadtlyrik (Deutsch 10)
+## Lokal starten
 
-Interaktiver Kurs-Guide: Reihenplan, Epochenwissen, Kunst, Analyse-Handwerkszeug, Übungen und eine Kreativwerkstatt.
+Im Projektordner:
 
-**https://feria08.github.io/Deutsch/expressionistische-grossstadtlyrik/**
+    python3 -m http.server 4327 --bind 127.0.0.1
 
-Weitere Reihen werden hier ergänzt, sobald sie fertig sind — jede bekommt einen eigenen Unterordner, der in der Übersichtsseite (`index.html`) verlinkt wird.
+Danach http://127.0.0.1:4327/ im Browser öffnen. Der Port 4327 kann bei Bedarf durch einen freien Port ersetzt werden.
+
