@@ -2,7 +2,7 @@
 
 Statische, interaktive Begleitseiten für den Deutschunterricht. Die veröffentlichte Übersichtsseite liegt unter:
 
-https://weltraumcowboy67.github.io/Deutsch-besser/
+https://feria08.github.io/Deutsch/
 
 ## Lokal starten
 
